@@ -1,3 +1,73 @@
-<meta http-equiv="refresh" content="0; URL='about.html'">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Tribee Music</title>
+  <link rel="stylesheet" href="CSS.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
 
+    .fade-in:nth-child(1) { animation-delay: 0.2s; }
+    .fade-in:nth-child(2) { animation-delay: 0.4s; }
+    .fade-in:nth-child(3) { animation-delay: 0.6s; }
+    .fade-in:nth-child(4) { animation-delay: 0.8s; }
+    .fade-in:nth-child(5) { animation-delay: 1s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<header>
+  <h1>Tribee Music</h1>
+  <p>Best Band in Indonesia - About Band and Gear</p>
+</header>
+
+<nav>
+  <a href="about.html">About</a>
+  <a href="oursong.html">Our Song</a>
+  <a href="ourgear.html">Gear</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <section class="section">
+    <h2>About Tribee</h2>
+
+    <p class="fade-in">Tribee is an Indonesian band passionately performing <strong>Rock</strong> and <strong>Pop Rock</strong>, drawing inspiration from legendary acts like <strong>Dewa 19</strong> and <strong>Queen</strong>. Our music blends energetic riffs, catchy melodies, and dynamic arrangements, aiming to capture the essence of both classic and modern rock while adding our own unique touch.</p>
+
+    <p class="fade-in">Each song we create is a carefully crafted journey—from the first chord progression to the final harmony. We focus on strong songwriting, emotional lyrics, and tight instrumental interplay, ensuring every track resonates with listeners. Our goal is to deliver music that not only entertains but also connects deeply with our audience.</p>
+
+    <p class="fade-in">On stage, Tribee thrives on delivering electrifying live performances, channeling the charisma of <strong>Queen</strong> and the melodic richness of <strong>Dewa 19</strong>. In the studio, we meticulously produce and mix our songs, paying attention to every detail so that each instrument, vocal, and effect sits perfectly in the mix.</p>
+
+    <p class="fade-in">Tribee is more than just a band; it’s a creative project fueled by passion, collaboration, and the desire to push musical boundaries. Whether performing live or recording in the studio, we strive to create an unforgettable experience that captures the energy, emotion, and spirit of rock music.</p>
+
+    <p class="fade-in">Through our songs, we aim to inspire, excite, and bring people together, celebrating the power of music and the legacy of the artists who have shaped our musical vision. Tribee continues to grow, experiment, and evolve, always staying true to the <strong>rock</strong> and <strong>pop rock</strong> roots that define us.</p>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 Tribee Music. All rights reserved.</p>
+</footer>
+
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
+</script>
+</body>
+</html>
 
