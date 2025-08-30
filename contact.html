@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Tribee Music</title>
+<link rel="stylesheet" href="CSS.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.8rem;
+  color: #333;
+  transition: color 0.3s;
+}
+.social-icons a:hover { color: #007BFF; }
+</style>
+</head>
+<body>
+
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<header>
+<h1>Tribee Music</h1>
+<p>Best Band in Indonesia - About Band and Gear</p>
+</header>
+
+<nav>
+<a href="about.html">About</a>
+<a href="oursong.html">Our Song</a>
+<a href="ourgear.html">Gear</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+<section class="section fade-in">
+<h2>Contact</h2>
+
+<p class="fade-in">Email us at: <a href="mailto:tribeemusic@gmail.com">tribeemusic@gmail.com</a></p>
+
+<div class="social-icons fade-in">
+<a href="https://instagram.com/batbat_squad" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://youtube.com/@Tribee_Music" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+
+</section>
+</div>
+
+<footer>
+<p>&copy; 2025 Tribee Music. All rights reserved.</p>
+</footer>
+
+<script>
+function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }
+</script>
+
+</body>
+</html>
