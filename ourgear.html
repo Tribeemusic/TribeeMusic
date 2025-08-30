@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Gear - Tribee Music</title>
+<link rel="stylesheet" href="CSS.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+.fade-in:nth-child(4) { animation-delay: 0.8s; }
+.fade-in:nth-child(5) { animation-delay: 1s; }
+.fade-in:nth-child(6) { animation-delay: 1.2s; }
+
+.gear-item img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<header>
+<h1>Tribee Music</h1>
+<p>Best Band in Indonesia - About Band and Gear</p>
+</header>
+
+<nav>
+<a href="about.html">About</a>
+<a href="oursong.html">Our Song</a>
+<a href="ourgear.html">Gear</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+<section class="section">
+<h2>Our Gear</h2>
+
+<div class="gear-category">
+<h3>🎸 Guitars</h3>
+
+<div class="gear-item fade-in">
+<strong>Squier Debut Stratocaster</strong>
+<p>The <strong>Squier Debut Stratocaster</strong> delivers classic Strat feel and tone with an alder body, bolt-on maple neck, and three single-coil pickups. Bright and articulate, perfect for pop, rock, and blues. Comfortable for both practice and performance.</p>
+<img src="squierdebut.jpg" alt="Squier Debut Stratocaster" style="width:300px; height:auto;">
+</div>
+
+<div class="gear-item fade-in">
+<strong>Yamaha Pacifica 112J</strong>
+<p>The <strong>Yamaha Pacifica 112J</strong> offers versatile tone and smooth playability. Alder body, bolt-on maple neck, rosewood fingerboard, H-S-S pickups. Ideal for pop, rock, blues, and funk.</p>
+<img src="PAC112J.jpg" alt="Yamaha Pacifica 112J" style="width:300px; height:auto;">
+</div>
+
+<div class="gear-item fade-in">
+<strong>Yamaha SG3 12 String</strong>
+<p>The <strong>Yamaha SG3 12-String</strong> produces a rich, shimmering sound. Mahogany body, maple neck, rosewood fingerboard. Perfect for folk, pop, and acoustic rock.</p>
+<img src="SG3.jpg" alt="Yamaha SG3 12 String" style="width:300px; height:auto;">
+</div>
+</div>
+
+<div class="gear-category">
+<h3>🎧 IEM & Mic</h3>
+
+<div class="gear-item fade-in">
+<strong>CCA Polaris</strong>
+<p>The <strong>CCA Polaris</strong> hybrid IEM delivers clear, detailed sound with strong lows, precise monitoring, and excellent instrument separation.</p>
+<img src="ccapolaris.jpg" alt="CCA Polaris" style="width:300px; height:auto;">
+</div>
+
+<div class="gear-item fade-in">
+<strong>Shure SM58</strong>
+<p>The <strong>Shure SM58</strong> is the industry-standard dynamic vocal mic, durable and reliable, delivering clear, natural vocals for live or studio use.</p>
+<img src="shuresm58.jpg" alt="Shure SM58" style="width:300px; height:auto;">
+</div>
+</div>
+
+<div class="gear-category">
+<h3>💻 DAWs & Plugins</h3>
+
+<div class="gear-item fade-in">
+<strong>Reaper</strong>
+<p><strong>Reaper</strong> is a lightweight, flexible DAW supporting audio/MIDI formats and VST/AU plugins. Powerful recording, mixing, and mastering with low resource usage.</p>
+<img src="reaper.jpg" alt="Reaper" style="width:300px; height:auto;">
+</div>
+
+<div class="gear-item fade-in">
+<strong>Helix Native</strong>
+<p><strong>Helix Native</strong> is a professional amp/effects plugin. Offers hundreds of presets, amp models, and cab IR options, ideal for recording and production.</p>
+<img src="native.jpg" alt="Helix Native" style="width:300px; height:auto;">
+</div>
+</div>
+
+<div class="gear-category">
+<h3>🎚 Effects & Amps</h3>
+
+<div class="gear-item fade-in">
+<strong>Joyo DC15</strong>
+<p>The <strong>Joyo DC15</strong> compact amp delivers clean and crunchy tones with 15W power. Lightweight and portable, great for practice and small gigs.</p>
+<img src="dc15.jpg" alt="Joyo DC15" style="width:300px; height:auto;">
+</div>
+
+<div class="gear-item fade-in">
+<strong>M-Vave Tank-G</strong>
+<p>The <strong>M-Vave Tank G</strong> multi-effects processor offers amp modeling, cabinet simulation, and diverse effects. USB-enabled for editing and recording, flexible for practice, studio, or live.</p>
+<img src="tank-g.jpg" alt="M-Vave Tank G" style="width:300px; height:auto;">
+</div>
+</div>
+
+</section>
+</div>
+
+<footer>
+<p>&copy; 2025 Tribee Music. All rights reserved.</p>
+</footer>
+
+<script>
+function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }
+</script>
+
+</body>
+</html>
